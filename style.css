@@ -2,13 +2,13 @@
 
 @font-face {
     font-family: "Albert Sans";
-    src: url("assets/fonts/albertsans/variable.ttf");
+    src: url("https://assets.bassemusic.com/fonts/albertsans/variable.ttf");
     font-style: normal;
 }
 
 @font-face {
     font-family: "Albert Sans";
-    src: url("assets/fonts/albertsans/italic.ttf");
+    src: url("https://assets.bassemusic.com/fonts/albertsans/italic.ttf");
     font-style: italic;
 }
 
@@ -16,7 +16,7 @@
 
 @font-face {
     font-family: "Stretch Pro";
-    src: url("assets/fonts/stretchpro/regular.otf");
+    src: url("https://assets.bassemusic.com/fonts/stretchpro/regular.otf");
 }
 
 /* Root (Applies to both themes) */
@@ -171,7 +171,7 @@ button.secondary:active {
 
 body[theme="night"] {
     color: var(--on-background);
-    background-image: url("assets/images/sunset (blurred).png");
+    background-image: url("https://assets.bassemusic.com/images/sunset (blurred).png");
     background-attachment: fixed;
     background-size: cover;
     /* background-color: var(--background); */
