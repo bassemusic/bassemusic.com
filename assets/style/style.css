@@ -1,0 +1,288 @@
+/* FONTS */
+
+@font-face {
+    font-family: "Neue Plak";
+    src: url("../fonts/neueplak/regular.ttf");
+    font-style: none;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Neue Plak";
+    src: url("../fonts/neueplak/bold.ttf");
+    font-style: none;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Neue Plak Extended";
+    src: url("../fonts/neueplak/extended/extrablack.ttf");
+    font-style: none;
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: "Neue Plak Extended";
+    src: url("../fonts/neueplak/extended/semibold.ttf");
+    font-style: none;
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "Neue Plak Extended";
+    src: url("../fonts/neueplak/extended/extrablack.ttf");
+    font-style: none;
+    font-weight: 900;
+}
+
+/* MISCELLANEOUS */
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: var(--background);
+}
+
+body.bg-forest {
+    background-image: url("../img/bg/forest.png");
+}
+
+body.wallpaper {
+    background-image: url("../img/bg/wallpaper.png");
+}
+
+/* COLORS */
+
+:root {
+    /* BASSE GREEN */
+    --primary: #00CF91;
+    --secondary: #00BAA4;
+    /* OTHER COLORS */
+    --red: #F60B60;
+    --blue: #09CAF4;
+    --yellow: #FFCC00;
+    --magenta: #CC00FF;
+    /* BACKGROUNDS */
+    --half-grey: #808080;
+    --dark-grey: #333333;
+    --background: #000000;
+    --on-background: #FFFFFF;
+}
+
+/* STYLES */
+
+h1 {
+    font-size: 48px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: var(--on-background);
+    font-family: "Neue Plak Extended", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+p {
+    font-size: 24px;
+    font-weight: 400;
+    color: var(--on-background);
+    font-family: "Neue Plak", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.form textarea,
+.form input[type="text"],
+.form input[type="email"],
+.form input[type="password"] {
+    width: 560px;
+}
+
+.form textarea {
+    height: 100px;
+}
+
+textarea,
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    outline: none;
+    font-size: 24px;
+    font-weight: 400;
+    padding: 12px 18px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    background: transparent;
+    color: var(--on-background);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    font-family: "Neue Plak", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    transition: border 200ms;
+    resize: none;
+}
+
+textarea::placeholder,
+input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+input[type="password"]::placeholder {
+    color: var(--on-background);
+}
+
+
+textarea:hover,
+input[type="text"]:hover,
+input[type="email"]:hover,
+input[type="password"]:hover {
+    border: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+textarea:focus,
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border: 2px solid rgba(255, 255, 255, 1);
+}
+
+.form input[type="submit"] {
+    width: 600px;
+}
+
+input[type="submit"] {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: 700;
+    padding: 12px 18px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    color: var(--background);
+    background-color: var(--primary);
+    font-family: "Neue Plak", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    transition: background 200ms;
+}
+
+input[type="submit"]:hover {
+    background-color: var(--secondary);
+}
+
+input[type="submit"]:disabled {
+    cursor: not-allowed;
+    background-color: var(--dark-grey);
+}
+
+.form button {
+    width: 600px;
+}
+
+button.hollow {
+    outline: none;
+    font-size: 24px;
+    cursor: pointer;
+    font-weight: 700;
+    padding: 12px 18px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    color: var(--primary);
+    background: transparent;
+    font-family: "Neue Plak", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    transition: background 200ms;
+}
+
+button.hollow:hover {
+    background-color: var(--dark-grey);
+}
+
+/* CLASSES */
+
+.primary-text {
+    color: var(--primary);
+}
+
+.row {
+    height: 100vh;
+    display: flex;
+}
+
+.column {
+    flex: 50%;
+    padding: 50px;
+    background-color: var(--background);
+}
+
+.column h1 {
+    margin-bottom: 30px;
+}
+
+.column p {
+    margin-bottom: 30px;
+}
+
+.transparent {
+    background: transparent;
+}
+
+.transparent.dark {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.footer.left a,
+.footer.right a {
+    font-size: 20px;
+    color: var(--half-grey);
+}
+
+.footer.left p,
+.footer.right p {
+    font-size: 20px;
+    margin-bottom: 0px;
+    color: var(--half-grey);
+}
+
+.footer.left {
+    left: 0;
+    bottom: 0;
+    padding: 20px;
+    text-align: left;
+    position: absolute;
+}
+
+.footer.right {
+    right: 0;
+    bottom: 0;
+    padding: 20px;
+    text-align: right;
+    position: absolute;
+}
+
+/* MISCELLANEOUS */
+
+::selection {
+    color: var(--background);
+    background-color: var(--primary);
+}
+
+.err-text {
+    color: var(--red);
+}
+
+.suc-text {
+    color: var(--primary);
+}
+
+.form-input-err {
+    border: 2px solid var(--red)!important;
+}
+
+em {
+    margin-right: 2px;
+}
+
+.form-input-info {
+    width: 600px;
+    font-size: 20px;
+    text-align: right;
+    color: rgba(255, 255, 255, 0.2);
+}
+
+.char-counter {
+    margin-top: -55px;
+    margin-left: -15px;
+}

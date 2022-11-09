@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="assets/img/brand/favicon.png" type="image/png">
+        <link rel="stylesheet" href="assets/style/style.css" type="text/css">
+        <link rel="stylesheet" href="assets/style/landing.css" type="text/css">
+        <title>Music by anyone, music for everyone. — BASSE</title>
+    </head>
+    <body class="wallpaper">
+        <div class="nav">
+            <img src="assets/img/brand/white-full-logo.png" alt="BASSE" height="50">
+        </div>
+        <div class="visualizer">
+            <div class="visualizer-bar vb-4"></div>
+            <div class="visualizer-bar vb-2"></div>
+            <div class="visualizer-bar vb-3"></div>
+            <div class="visualizer-bar vb-1"></div>
+            <div class="visualizer-bar vb-2"></div>
+            <div class="visualizer-bar vb-4"></div>
+            <div class="visualizer-bar vb-2"></div>
+            <div class="visualizer-bar vb-1"></div>
+            <div class="visualizer-bar vb-3"></div>
+            <div class="visualizer-bar vb-2"></div>
+            <div class="visualizer-bar vb-4"></div>
+            <div class="visualizer-bar vb-3"></div>
+            <div class="visualizer-bar vb-1"></div>
+            <div class="visualizer-bar vb-2"></div>
+            <div class="visualizer-bar vb-4"></div>
+            <div class="visualizer-bar vb-3"></div>
+            <div class="visualizer-bar vb-2"></div>
+            <div class="visualizer-bar vb-3"></div>
+            <div class="visualizer-bar vb-1"></div>
+            <div class="visualizer-bar vb-2"></div>
+            <div class="visualizer-bar vb-4"></div>
+            <div class="visualizer-bar vb-3"></div>
+            <div class="visualizer-bar vb-2"></div>
+            <div class="visualizer-bar vb-4"></div>
+            <div class="visualizer-bar vb-2"></div>
+            <div class="visualizer-bar vb-1"></div>
+            <div class="visualizer-bar vb-3"></div>
+            <div class="visualizer-bar vb-2"></div>
+            <div class="visualizer-bar vb-3"></div>
+            <div class="visualizer-bar vb-4"></div>
+        </div>
+        <div class="hero">
+            <div class="hero-content">
+                <h1 style="line-height: 80px;"><span style="font-size: 52px; letter-spacing: 25px; font-weight: 600;">United By</span><br><span style="font-size: 128px;">Music</span></h1><br>
+                <p style="font-size: 36px; width: 800px;">BASSE is a great place for new artists to get noticed, and larger artists to expand their fanbase.</p>
+            </div>
+        </div>
+        <div class="footer">
+            <h1 style="letter-spacing: 25px;">COMING SOON</h1>
+        </div>
+        <script>
+            var bars = document.getElementsByClassName("visualizer-bar");
+            var i = 0;
+            setInterval(function() {
+                bars[i].style.height = Math.floor(Math.random() * 70) + "%";
+                i++;
+                if (i == bars.length) {
+                    i = 0;
+                }
+            }, 0);
+        </script>
+    </body>
+</html>

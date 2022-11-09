@@ -1,0 +1,66 @@
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+.footer {
+    /* Align to bottom */
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
+    /* Center */
+    text-align: center;
+    /* Padding */
+    padding: 30px;
+}
+
+.hero {
+    margin-top: 70px;
+    /* Center */
+    text-align: center;
+    /* Padding */
+    padding: 30px;
+}
+
+.hero p {
+    margin: auto;
+}
+
+.visualizer {
+    position: fixed;
+    margin-top: -110px;
+    /* Center all objects */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.visualizer-bar {
+    width: 30px;
+    height: 100px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    margin: 10px;
+    transition: height 1s;
+}
+
+.vb-1 {
+    height: 100px;
+}
+
+.vb-2 {
+    height: 150px;
+}
+
+.vb-3 {
+    height: 200px;
+}
+
+.vb-4 {
+    height: 70px;
+}
